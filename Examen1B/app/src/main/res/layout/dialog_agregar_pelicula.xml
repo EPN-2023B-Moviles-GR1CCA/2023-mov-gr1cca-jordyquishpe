@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etNombrePelicula"
+        android:layout_width="278dp"
+        android:layout_height="45dp"
+        android:hint="Nombre de la Película"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <EditText
+        android:id="@+id/etFechaEstreno"
+        android:layout_width="279dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="64dp"
+        android:hint="Fecha de Estreno"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etNombrePelicula"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etNombrePelicula"
+        app:layout_constraintTop_toBottomOf="@+id/etNombrePelicula" />
+
+    <EditText
+        android:id="@+id/etDuracion"
+        android:layout_width="278dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:hint="Duración (min)"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/etFechaEstreno"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etFechaEstreno"
+        app:layout_constraintTop_toBottomOf="@+id/etFechaEstreno" />
+
+    <EditText
+        android:id="@+id/etRating"
+        android:layout_width="281dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="72dp"
+        android:hint="Rating"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/etDuracion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etDuracion"
+        app:layout_constraintTop_toBottomOf="@+id/etDuracion" />
+
+    <EditText
+        android:id="@+id/etEs3D"
+        android:layout_width="281dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="76dp"
+        android:hint="Es 3D"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etRating"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etRating"
+        app:layout_constraintTop_toBottomOf="@+id/etRating" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

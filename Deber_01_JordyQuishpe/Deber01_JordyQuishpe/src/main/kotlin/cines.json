@@ -1,0 +1,17 @@
+[
+  {
+    "nombre": "Multicines",
+    "ubicacion": "CCI",
+    "capacidadSalas": 45,
+    "clasificacion": "3",
+    "peliculas": [
+      {
+        "nombre": "Rapidos y furiosos",
+        "fechaEstreno": "1998-10-10",
+        "duracion": 34,
+        "rating": 3.0,
+        "es3D": false
+      }
+    ]
+  }
+]
