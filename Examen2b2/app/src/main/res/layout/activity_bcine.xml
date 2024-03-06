@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".BCine">
+
+    <EditText
+        android:id="@+id/editTextText_NombreCine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText_Ubicacion"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText_Ubicacion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextText_Ubicacion" />
+
+    <EditText
+        android:id="@+id/editTextText_Ubicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Ubicacion"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTex_CapacidadSala"
+        app:layout_constraintEnd_toEndOf="@+id/editTex_CapacidadSala"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTex_CapacidadSala" />
+
+    <EditText
+        android:id="@+id/editTextText_Clasificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="Clasificacion"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btnCrearCine"
+        app:layout_constraintEnd_toEndOf="@+id/btnCrearCine"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/btnCrearCine" />
+
+    <ListView
+        android:id="@+id/lvView_Cine"
+        android:layout_width="269dp"
+        android:layout_height="306dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCrearCine"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/btnCrearCine"
+        app:layout_constraintTop_toBottomOf="@+id/btnCrearCine" />
+
+    <Button
+        android:id="@+id/btnCrearCine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.579" />
+
+    <EditText
+        android:id="@+id/editTex_CapacidadSala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Capacidad"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText_Clasificacion"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText_Clasificacion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextText_Clasificacion" />
+</androidx.constraintlayout.widget.ConstraintLayout>

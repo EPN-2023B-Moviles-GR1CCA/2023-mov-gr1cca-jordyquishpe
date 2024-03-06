@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/etNombreCine"
+        android:layout_width="278dp"
+        android:layout_height="45dp"
+        android:hint="Nombre del Cine"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <EditText
+        android:id="@+id/etUbicacionCine"
+        android:layout_width="279dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="68dp"
+        android:hint="Ubicación"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etNombreCine"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etNombreCine"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreCine" />
+
+    <EditText
+        android:id="@+id/etCapacidadCine"
+        android:layout_width="278dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:hint="Capacidad"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/etUbicacionCine"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/etUbicacionCine"
+        app:layout_constraintTop_toBottomOf="@+id/etUbicacionCine" />
+
+    <EditText
+        android:id="@+id/etClasificacionCine"
+        android:layout_width="281dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="88dp"
+        android:hint="Clasificación"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etCapacidadCine"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etCapacidadCine"
+        app:layout_constraintTop_toBottomOf="@+id/etCapacidadCine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

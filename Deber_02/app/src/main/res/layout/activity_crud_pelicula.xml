@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_sqlite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrudPelicula">
+
+
+    <Button
+        android:id="@+id/btn_crear_pelicula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.765" />
+
+    <Button
+        android:id="@+id/btn_buscar_pelicula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="Buscar"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_crear_pelicula"
+        app:layout_constraintEnd_toStartOf="@+id/btn_crear_pelicula"
+        app:layout_constraintTop_toTopOf="@+id/btn_crear_pelicula"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_actualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Actualizar"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_crear_pelicula"
+        app:layout_constraintStart_toEndOf="@+id/btn_crear_pelicula"
+        app:layout_constraintTop_toTopOf="@+id/btn_crear_pelicula"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_eliminar_pelicula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Eliminar"
+        app:layout_constraintEnd_toEndOf="@+id/btn_buscar_pelicula"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_buscar_pelicula"
+        app:layout_constraintTop_toBottomOf="@+id/btn_buscar_pelicula" />
+
+    <Button
+        android:id="@+id/btn_mostrar_pelicula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Mostrar"
+        app:layout_constraintEnd_toEndOf="@+id/btn_crear_pelicula"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_crear_pelicula"
+        app:layout_constraintTop_toBottomOf="@+id/btn_crear_pelicula" />
+
+    <Button
+        android:id="@+id/btn_regresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Atras"
+        app:layout_constraintEnd_toEndOf="@+id/btn_actualizar"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/btn_actualizar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_actualizar" />
+
+    <EditText
+        android:id="@+id/input_es3d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="es3d"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btn_crear_pelicula"
+        app:layout_constraintEnd_toEndOf="@+id/btn_crear_pelicula"
+        app:layout_constraintStart_toStartOf="@+id/btn_crear_pelicula" />
+
+    <EditText
+        android:id="@+id/input_duracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="duracion"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/input_es3d"
+        app:layout_constraintEnd_toEndOf="@+id/input_es3d"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_es3d" />
+
+    <EditText
+        android:id="@+id/input_fechaestreno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="fecha estreno"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/input_duracion"
+        app:layout_constraintEnd_toEndOf="@+id/input_duracion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_duracion" />
+
+    <EditText
+        android:id="@+id/input_nombrepelicula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="nombre"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/input_fechaestreno"
+        app:layout_constraintEnd_toEndOf="@+id/input_fechaestreno"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_fechaestreno" />
+
+    <TextView
+        android:id="@+id/textView_cine"
+        android:layout_width="76dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="52dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/input_idPelicula"
+        app:layout_constraintEnd_toEndOf="@+id/input_idPelicula"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/input_idPelicula" />
+
+    <EditText
+        android:id="@+id/input_idPelicula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="IdPelicula"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/input_nombrepelicula"
+        app:layout_constraintEnd_toEndOf="@+id/input_nombrepelicula"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_nombrepelicula" />
+</androidx.constraintlayout.widget.ConstraintLayout>

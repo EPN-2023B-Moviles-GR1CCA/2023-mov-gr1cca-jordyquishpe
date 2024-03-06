@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerPelicula">
+
+    <Button
+        android:id="@+id/btn_crear_pelicula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557" />
+
+    <EditText
+        android:id="@+id/editTextText_es3d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="es3D"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btn_crear_pelicula"
+        app:layout_constraintEnd_toEndOf="@+id/btn_crear_pelicula"
+        app:layout_constraintStart_toStartOf="@+id/btn_crear_pelicula" />
+
+    <EditText
+        android:id="@+id/editTextText_Duracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Duracion"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText_es3d"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText_es3d"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextText_es3d" />
+
+    <EditText
+        android:id="@+id/editTextText_FechaEstreno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Fecha esteno"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText_Duracion"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText_Duracion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextText_Duracion" />
+
+    <EditText
+        android:id="@+id/editTextText_nombre_pelicula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText_FechaEstreno"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText_FechaEstreno"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextText_FechaEstreno" />
+
+    <ListView
+        android:id="@+id/lvView_Pelicula"
+        android:layout_width="283dp"
+        android:layout_height="297dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_crear_pelicula"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/btn_crear_pelicula"
+        app:layout_constraintTop_toBottomOf="@+id/btn_crear_pelicula" />
+</androidx.constraintlayout.widget.ConstraintLayout>
